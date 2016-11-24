@@ -1,10 +1,12 @@
-BEGIN { @*INC.push('lib') };
+use v6;
+use Test;
+
+use lib 'lib';
 
 use IoC::Container;
 use IoC::ConstructorInjection;
 use IoC::BlockInjection;
 use IoC::Literal;
-use Test;
 
 plan 6;
 

@@ -1,7 +1,8 @@
-BEGIN { @*INC.push('lib') };
+use v6;
+use Test;
+use lib 'lib';
 
 use IoC;
-use Test;
 plan 5;
 
 class Bar {};
